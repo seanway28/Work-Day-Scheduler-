@@ -5,7 +5,7 @@ dateEl.text(moment().format('dddd, MMMM Do'))
 var textareaEl = $("textarea")
 var currentHour = moment().format('H');
 
-// for each textarea
+// for each text area
 $('textarea').each(function() {
     // grab its id
     var id = $(this).attr('id')
@@ -16,7 +16,7 @@ $('textarea').each(function() {
 })
 
 $( "button" ).click(function() {
-    // jquery get the button that was clicked
+    // jquery gets the button that was clicked
     var button = $(this);
     // get the textarea alement next to it
     var textarea = button.siblings("textarea");
